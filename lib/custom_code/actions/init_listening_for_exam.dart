@@ -1,0 +1,17 @@
+// Automatic FlutterFlow imports
+import '/backend/schema/structs/index.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/custom_code/actions/index.dart'; // Imports other custom actions
+import 'package:flutter/material.dart';
+// Begin custom action code
+// DO NOT REMOVE OR MODIFY THE CODE ABOVE!
+
+Future initListeningForExam() async {
+  final s = FFAppState();
+  // Solo reseteamos si venimos del modo examen
+  if (s.currentSession.mode == 'exam') {
+    s.mcqPlayed = 0;
+    s.listeningScore = 0;
+  }
+}
