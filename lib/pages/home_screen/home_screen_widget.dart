@@ -92,36 +92,46 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Flexible(
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 50.0),
-                          child: GradientText(
-                            'TRIVIA DE \nEDUCACIÓN SECUNDARIA',
-                            textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context)
-                                .headlineLarge
-                                .override(
-                                  font: GoogleFonts.poppins(
-                                    fontWeight: FontWeight.w900,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .headlineLarge
-                                        .fontStyle,
-                                  ),
-                                  color: FlutterFlowTheme.of(context).secondary,
-                                  fontSize: 64.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w900,
-                                  fontStyle: FlutterFlowTheme.of(context)
-                                      .headlineLarge
-                                      .fontStyle,
-                                  lineHeight: 1.0,
-                                ),
-                            colors: [
-                              FlutterFlowTheme.of(context).primary,
-                              FlutterFlowTheme.of(context).secondary
-                            ],
-                            gradientDirection: GradientDirection.ltr,
-                            gradientType: GradientType.linear,
+                        child: Opacity(
+                          opacity: 0.6,
+                          child: Container(
+                            width: 600.0,
+                            height: 150.0,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                            ),
+                            child: Align(
+                              alignment: AlignmentDirectional(0.0, 0.0),
+                              child: GradientText(
+                                'REPASA SECUNDARIA',
+                                textAlign: TextAlign.center,
+                                style: FlutterFlowTheme.of(context)
+                                    .headlineLarge
+                                    .override(
+                                      font: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w900,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .headlineLarge
+                                            .fontStyle,
+                                      ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondary,
+                                      fontSize: 65.0,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.w900,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .headlineLarge
+                                          .fontStyle,
+                                      lineHeight: 1.0,
+                                    ),
+                                colors: [
+                                  FlutterFlowTheme.of(context).primary,
+                                  FlutterFlowTheme.of(context).secondary
+                                ],
+                                gradientDirection: GradientDirection.ltr,
+                                gradientType: GradientType.linear,
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -179,9 +189,7 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget> {
                                                         .bodyMedium
                                                         .fontStyle,
                                               ),
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .accent3,
+                                              color: Color(0xFF6B6B76),
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)

@@ -234,7 +234,7 @@ class _InstructionsPageWidgetState extends State<InstructionsPageWidget> {
                   height: 120.0,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                      colors: [Color(0xFF667EEA), Color(0xFF4BA263)],
+                      colors: [Color(0xFF4C51BF), Color(0xFF2F7A4A)],
                       stops: [0.0, 1.0],
                       begin: AlignmentDirectional(1.0, 0.0),
                       end: AlignmentDirectional(-1.0, 0),
@@ -276,7 +276,7 @@ class _InstructionsPageWidgetState extends State<InstructionsPageWidget> {
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xCCFFFFFF),
+                                          color: Colors.white,
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight:

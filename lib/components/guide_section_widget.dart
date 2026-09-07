@@ -163,25 +163,6 @@ class _GuideSectionWidgetState extends State<GuideSectionWidget> {
                         ].divide(SizedBox(width: 16.0)),
                       ),
                     ),
-                    Container(
-                      width: 24.0,
-                      height: 24.0,
-                      child: Stack(
-                        alignment: AlignmentDirectional(0.0, 0.0),
-                        children: [
-                          Icon(
-                            Icons.expand_less_rounded,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 24.0,
-                          ),
-                          Icon(
-                            Icons.expand_more_rounded,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 24.0,
-                          ),
-                        ],
-                      ),
-                    ),
                   ].divide(SizedBox(width: 16.0)),
                 ),
               ),
@@ -218,6 +199,7 @@ class _GuideSectionWidgetState extends State<GuideSectionWidget> {
                                   .fontStyle,
                             ),
                             color: Colors.black,
+                            fontSize: 16.0,
                             letterSpacing: 0.0,
                             fontWeight: FlutterFlowTheme.of(context)
                                 .bodyMedium

@@ -60,10 +60,15 @@ class _MenuButtonWidgetState extends State<MenuButtonWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 100.0,
+      height: 120.0,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).primary,
-        borderRadius: BorderRadius.circular(9999.0),
+        color: Color(0xFF1E3A8A),
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(24.0),
+          topRight: Radius.circular(24.0),
+          bottomLeft: Radius.circular(24.0),
+          bottomRight: Radius.circular(24.0),
+        ),
         shape: BoxShape.rectangle,
         border: Border.all(
           color: Color(0xFF3CD415),
@@ -101,7 +106,7 @@ class _MenuButtonWidgetState extends State<MenuButtonWidget> {
                                 .titleMedium
                                 .fontStyle,
                           ),
-                          color: Color(0xFF3CD415),
+                          color: Colors.white,
                           fontSize: 36.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w800,
@@ -118,19 +123,15 @@ class _MenuButtonWidgetState extends State<MenuButtonWidget> {
                     ),
                     style: FlutterFlowTheme.of(context).labelSmall.override(
                           font: GoogleFonts.poppins(
-                            fontWeight: FlutterFlowTheme.of(context)
-                                .labelSmall
-                                .fontWeight,
+                            fontWeight: FontWeight.normal,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .fontStyle,
                           ),
-                          color: Color(0xFF3CD415),
+                          color: Colors.white,
                           fontSize: 16.0,
                           letterSpacing: 0.0,
-                          fontWeight: FlutterFlowTheme.of(context)
-                              .labelSmall
-                              .fontWeight,
+                          fontWeight: FontWeight.normal,
                           fontStyle:
                               FlutterFlowTheme.of(context).labelSmall.fontStyle,
                           lineHeight: 1.2,
