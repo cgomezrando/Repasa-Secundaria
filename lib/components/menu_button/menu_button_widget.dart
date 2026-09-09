@@ -94,48 +94,67 @@ class _MenuButtonWidgetState extends State<MenuButtonWidget> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    valueOrDefault<String>(
-                      widget!.title,
-                      'GRAMMAR',
-                    ),
-                    style: FlutterFlowTheme.of(context).titleMedium.override(
-                          font: GoogleFonts.poppins(
-                            fontWeight: FontWeight.w800,
-                            fontStyle: FlutterFlowTheme.of(context)
-                                .titleMedium
-                                .fontStyle,
+                  Flexible(
+                    child: Container(
+                      width: double.infinity,
+                      height: 40.0,
+                      decoration: BoxDecoration(),
+                      child: Align(
+                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        child: Text(
+                          valueOrDefault<String>(
+                            widget!.title,
+                            'GRAMMAR',
                           ),
-                          color: Colors.white,
-                          fontSize: 36.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.w800,
-                          fontStyle: FlutterFlowTheme.of(context)
-                              .titleMedium
-                              .fontStyle,
-                          lineHeight: 1.4,
+                          style:
+                              FlutterFlowTheme.of(context).titleMedium.override(
+                                    font: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w800,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .fontStyle,
+                                    ),
+                                    color: Colors.white,
+                                    fontSize: 36.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w800,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleMedium
+                                        .fontStyle,
+                                    lineHeight: 1.4,
+                                  ),
                         ),
+                      ),
+                    ),
                   ),
-                  Text(
-                    valueOrDefault<String>(
-                      widget!.subtitle,
-                      '¡Pon a prueba tu conocimiento de la historia de los mundiales!',
-                    ),
-                    style: FlutterFlowTheme.of(context).labelSmall.override(
-                          font: GoogleFonts.poppins(
-                            fontWeight: FontWeight.normal,
-                            fontStyle: FlutterFlowTheme.of(context)
-                                .labelSmall
-                                .fontStyle,
-                          ),
-                          color: Colors.white,
-                          fontSize: 16.0,
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.normal,
-                          fontStyle:
-                              FlutterFlowTheme.of(context).labelSmall.fontStyle,
-                          lineHeight: 1.2,
+                  Flexible(
+                    child: Container(
+                      width: double.infinity,
+                      height: 60.0,
+                      decoration: BoxDecoration(),
+                      child: Text(
+                        valueOrDefault<String>(
+                          widget!.subtitle,
+                          '¡Pon a prueba tu conocimiento de la historia de los mundiales!',
                         ),
+                        style: FlutterFlowTheme.of(context).labelSmall.override(
+                              font: GoogleFonts.poppins(
+                                fontWeight: FontWeight.normal,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .labelSmall
+                                    .fontStyle,
+                              ),
+                              color: Colors.white,
+                              fontSize: 16.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.normal,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .labelSmall
+                                  .fontStyle,
+                              lineHeight: 1.2,
+                            ),
+                      ),
+                    ),
                   ),
                 ].divide(SizedBox(height: 2.0)),
               ),
